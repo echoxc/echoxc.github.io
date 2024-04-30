@@ -36,10 +36,10 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <p>反应堆核物理，实际上就是堆内中子的物理学。中子是组成原子核的粒子之一，其静止质量
 稍大于质子的静止质量。通常在工程上取中子的静止质量为1u,
 中子不带电荷。</p>
-<p>在反应堆物理分析中，中子一般按照能量分成三类： -
-<strong>快中子</strong>：能量大于0.1MeV -
+<p>在反应堆物理分析中，中子一般按照能量分成三类： +
+<strong>快中子</strong>：能量大于0.1MeV *
 <strong>中能中子</strong>：能量在1eV <span
-class="math inline">\(\sim\)</span> 0.1Mev之间 -
+class="math inline">\(\sim\)</span> 0.1Mev之间 *
 <strong>热中子</strong>：能量小于1eV</p>
 ]]></content>
       <tags>
