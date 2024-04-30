@@ -29,25 +29,15 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
-    <title>反应堆中子物理学</title>
-    <url>/2024/04/29/%E5%8F%8D%E5%BA%94%E5%A0%86%E4%B8%AD%E5%AD%90%E7%89%A9%E7%90%86%E5%AD%A6/</url>
-    <content><![CDATA[
-]]></content>
-      <tags>
-        <tag>反应堆物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2024/04/30/test/</url>
+    <title>中子物理学</title>
+    <url>/2024/04/30/Reactor%20neutron%20physics/</url>
     <content><![CDATA[<h1 id="中子与原子核的作用">中子与原子核的作用</h1>
 <h2 id="中子与原子核反应">中子与原子核反应</h2>
-<p>反应堆核物理，实际上就是堆内中子的物理学。中子是组成原子核的粒子之一，其静止质量
-稍大于质子的静止质量。通常在工程上取中子的静止质量为1u,
+<p>反应堆核物理，实际上就是堆内中子的物理学。中子是组成原子核的粒子之一，其静止质量稍大于质子的静止质量。通常在工程上取中子的静止质量为1u,
 中子不带电荷。</p>
 <p>在反应堆物理分析中，中子一般按照能量分成三类：</p>
 <ul>
-<li><strong>中子</strong>：能量小于1eV</li>
+<li><strong>热中子</strong>：能量小于1eV</li>
 <li><strong>中能中子</strong>：能量在1eV <span
 class="math inline">\(\sim\)</span> 0.1MeV之间</li>
 <li><strong>快中子</strong>：能量大于0.1MeV</li>
