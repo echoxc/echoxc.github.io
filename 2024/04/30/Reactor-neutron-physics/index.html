@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"echoxc.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":300,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/./public/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="中子与原子核的作用 中子分类 反应堆核物理，实际上就是堆内中子的物理学。中子是组成原子核的粒子之一，其静止质量稍大于质子的静止质量。通常在工程上取中子的静止质量为1u, 中子不带电荷。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中子物理学">
+<meta property="og:url" content="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/index.html">
+<meta property="og:site_name" content="LemonTree的小站">
+<meta property="og:description" content="中子与原子核的作用 中子分类 反应堆核物理，实际上就是堆内中子的物理学。中子是组成原子核的粒子之一，其静止质量稍大于质子的静止质量。通常在工程上取中子的静止质量为1u, 中子不带电荷。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/Elastic-scattering.png">
+<meta property="og:image" content="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/L-C-angle.png">
+<meta property="og:image" content="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/Neutron-resonance-absorption.png">
+<meta property="og:image" content="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/Energy-self-shield.png">
+<meta property="article:published_time" content="2024-04-30T05:40:05.000Z">
+<meta property="article:modified_time" content="2024-06-12T05:11:23.991Z">
+<meta property="article:author" content="Lemon Tree">
+<meta property="article:tag" content="反应堆物理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/Elastic-scattering.png">
+
+
+<link rel="canonical" href="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/","path":"2024/04/30/Reactor-neutron-physics/","title":"中子物理学"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>中子物理学 | LemonTree的小站</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">LemonTree的小站</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">没有星星的夜里 我用泪光吸引你</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于我</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>留言板</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E4%B8%8E%E5%8E%9F%E5%AD%90%E6%A0%B8%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">中子与原子核的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E5%88%86%E7%B1%BB"><span class="nav-number">1.1.</span> <span class="nav-text">中子分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E4%B8%8E%E5%8E%9F%E5%AD%90%E6%A0%B8%E5%8F%8D%E5%BA%94"><span class="nav-number">1.2.</span> <span class="nav-text">中子与原子核反应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%94%E5%A0%86%E5%86%85%E7%9A%84%E4%B8%AD%E5%AD%90%E6%95%A3%E5%B0%84"><span class="nav-number">1.2.1.</span> <span class="nav-text">反应堆内的中子散射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E7%9A%84%E5%90%B8%E6%94%B6"><span class="nav-number">1.2.2.</span> <span class="nav-text">中子的吸收</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BE%90%E5%B0%84%E4%BF%98%E8%8E%B7"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">辐射俘获</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#n-pn-alpha%E5%8F%8D%E5%BA%94"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">\((n, p)、(n,
+\alpha)\)反应</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%B8%E8%A3%82%E5%8F%98"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">核裂变</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%98%93%E8%A3%82%E5%8F%98%E5%90%8C%E4%BD%8D%E7%B4%A0"><span class="nav-number">1.2.2.3.1.</span> <span class="nav-text">易裂变同位素：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%AF%E8%A3%82%E5%8F%98%E5%90%8C%E4%BD%8D%E7%B4%A0"><span class="nav-number">1.2.2.3.2.</span> <span class="nav-text">可裂变同位素：</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E6%88%AA%E9%9D%A2%E4%B8%8E%E4%B8%AD%E5%AD%90%E8%83%BD%E8%B0%B1"><span class="nav-number">2.</span> <span class="nav-text">中子截面与中子能谱</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E8%83%BD%E8%B0%B1"><span class="nav-number">2.1.</span> <span class="nav-text">中子能谱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E6%88%AA%E9%9D%A2"><span class="nav-number">2.2.</span> <span class="nav-text">中子截面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AE%E8%A7%82%E5%90%B8%E6%94%B6%E6%88%AA%E9%9D%A2"><span class="nav-number">2.2.1.</span> <span class="nav-text">微观吸收截面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AE%E8%A7%82%E6%95%A3%E5%B0%84%E6%88%AA%E9%9D%A2"><span class="nav-number">2.2.2.</span> <span class="nav-text">微观散射截面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%9E%E5%BC%B9%E6%80%A7%E6%95%A3%E5%B0%84%E6%88%AA%E9%9D%A2-sigma_in"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">非弹性散射截面 \(\sigma_{in}\)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%B9%E6%80%A7%E6%95%A3%E5%B0%84%E6%88%AA%E9%9D%A2-sigma_s"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">弹性散射截面 \(\sigma_{s}\)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AE%E8%A7%82%E8%A3%82%E5%8F%98%E6%88%AA%E9%9D%A2-sigma_f"><span class="nav-number">2.2.3.</span> <span class="nav-text">微观裂变截面 \(\sigma_{f}\)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%83%AD%E4%B8%AD%E5%AD%90%E5%8F%8D%E5%BA%94%E5%A0%86%E5%86%85%E4%B8%AD%E5%AD%90%E5%BE%AA%E7%8E%AF"><span class="nav-number">3.</span> <span class="nav-text">热中子反应堆内中子循环</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E6%85%A2%E5%8C%96%E7%90%86%E8%AE%BA"><span class="nav-number">4.</span> <span class="nav-text">中子慢化理论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E7%9A%84%E5%BC%B9%E6%80%A7%E6%95%A3%E5%B0%84%E8%BF%87%E7%A8%8B"><span class="nav-number">4.1.</span> <span class="nav-text">中子的弹性散射过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%A3%E5%B0%84%E5%90%8E%E4%B8%AD%E5%AD%90%E7%9A%84%E8%83%BD%E9%87%8F%E5%88%86%E5%B8%83"><span class="nav-number">4.1.1.</span> <span class="nav-text">散射后中子的能量分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B3%E5%9D%87%E5%AF%B9%E6%95%B0%E8%83%BD%E9%99%8D"><span class="nav-number">4.1.2.</span> <span class="nav-text">平均对数能降</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B3%E5%9D%87%E6%95%A3%E5%B0%84%E8%A7%92%E4%BD%99%E5%BC%A6"><span class="nav-number">4.1.3.</span> <span class="nav-text">平均散射角余弦</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%85%A2%E5%8C%96%E5%89%82%E9%80%89%E6%8B%A9"><span class="nav-number">4.1.4.</span> <span class="nav-text">慢化剂选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E5%B9%B3%E5%9D%87%E5%AF%BF%E5%91%BD"><span class="nav-number">4.1.5.</span> <span class="nav-text">中子平均寿命</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%85%A2%E5%8C%96%E6%97%B6%E9%97%B4"><span class="nav-number">4.1.5.1.</span> <span class="nav-text">慢化时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A9%E6%95%A3%E6%97%B6%E9%97%B4"><span class="nav-number">4.1.5.2.</span> <span class="nav-text">扩散时间</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E6%85%A2%E5%8C%96%E8%83%BD%E8%B0%B1"><span class="nav-number">4.2.</span> <span class="nav-text">中子慢化能谱</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E6%85%A2%E5%8C%96%E6%96%B9%E7%A8%8B%E7%9A%84%E5%BB%BA%E7%AB%8B"><span class="nav-number">4.2.1.</span> <span class="nav-text">中子慢化方程的建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E5%90%B8%E6%94%B6%E5%8D%95%E6%A0%B8%E7%B4%A0%E6%97%A0%E9%99%90%E4%BB%8B%E8%B4%A8"><span class="nav-number">4.2.2.</span> <span class="nav-text">无吸收单核素无限介质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E5%90%B8%E6%94%B6%E6%B7%B7%E5%90%88%E7%89%A9%E6%97%A0%E9%99%90%E4%BB%8B%E8%B4%A8%E6%83%85%E5%86%B5"><span class="nav-number">4.2.3.</span> <span class="nav-text">无吸收混合物无限介质情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E9%99%90%E4%BB%8B%E8%B4%A8%E5%BC%B1%E5%90%B8%E6%94%B6%E6%83%85%E5%86%B5"><span class="nav-number">4.2.4.</span> <span class="nav-text">无限介质弱吸收情况</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%85%A2%E5%8C%96%E8%BF%87%E7%A8%8B%E7%9A%84%E5%85%B1%E6%8C%AF%E5%90%B8%E6%94%B6"><span class="nav-number">4.3.</span> <span class="nav-text">慢化过程的共振吸收</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E6%95%88%E5%85%B1%E6%8C%AF%E7%A7%AF%E5%88%86"><span class="nav-number">4.3.1.</span> <span class="nav-text">有效共振积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E6%95%88%E5%85%B1%E6%8C%AF%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97"><span class="nav-number">4.3.2.</span> <span class="nav-text">有效共振积分计算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AA%84%E5%85%B1%E6%8C%AFnr%E8%BF%91%E4%BC%BC"><span class="nav-number">4.3.2.1.</span> <span class="nav-text">窄共振(NR)近似</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AA%84%E5%85%B1%E6%8C%AF%E6%97%A0%E9%99%90%E8%B4%A8%E9%87%8Fnrim%E8%BF%91%E4%BC%BC"><span class="nav-number">4.3.2.2.</span> <span class="nav-text">窄共振无限质量(NRIM)近似</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%BD%E9%87%8F%E8%87%AA%E5%B1%8F%E6%95%88%E5%BA%94"><span class="nav-number">4.3.3.</span> <span class="nav-text">能量自屏效应</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%83%AD%E4%B8%AD%E5%AD%90%E8%83%BD%E8%B0%B1"><span class="nav-number">4.4.</span> <span class="nav-text">热中子能谱</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%83%AD%E4%B8%AD%E5%AD%90%E8%83%BD%E8%B0%B1%E7%9A%84%E7%A1%AC%E5%8C%96"><span class="nav-number">4.4.1.</span> <span class="nav-text">热中子能谱的“硬化”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%83%AD%E4%B8%AD%E5%AD%90%E7%9A%84%E5%B9%B3%E5%9D%87%E6%88%AA%E9%9D%A2"><span class="nav-number">4.4.2.</span> <span class="nav-text">热中子的平均截面</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%E6%89%A9%E6%95%A3%E7%90%86%E8%AE%BA"><span class="nav-number">5.</span> <span class="nav-text">中子扩散理论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%83%BD%E4%B8%AD%E5%AD%90%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B"><span class="nav-number">5.1.</span> <span class="nav-text">单能中子扩散方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#fick%E5%AE%9A%E5%BE%8B"><span class="nav-number">5.1.1.</span> <span class="nav-text">Fick定律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E8%83%BD%E4%B8%AD%E5%AD%90%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B%E5%BB%BA%E7%AB%8B"><span class="nav-number">5.1.2.</span> <span class="nav-text">单能中子扩散方程建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"><span class="nav-number">5.1.3.</span> <span class="nav-text">扩散方程边界条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fick%E5%AE%9A%E5%BE%8B%E9%80%82%E7%94%A8%E8%8C%83%E5%9B%B4"><span class="nav-number">5.1.4.</span> <span class="nav-text">Fick定律适用范围</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E5%A2%9E%E6%AE%96%E4%BB%8B%E8%B4%A8%E5%86%85%E4%B8%AD%E5%AD%90%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3"><span class="nav-number">5.2.</span> <span class="nav-text">非增殖介质内中子扩散方程的解</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Lemon Tree"
+      src="/images/picture3.jpg">
+  <p class="site-author-name" itemprop="name">Lemon Tree</p>
+  <div class="site-description" itemprop="description">最好的自己，永远留给台下的你！</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=110 src="//music.163.com/outchain/player?type=0&id=2844914148&auto=1&height=90"></iframe>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/picture3.jpg">
+      <meta itemprop="name" content="Lemon Tree">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LemonTree的小站">
+      <meta itemprop="description" content="最好的自己，永远留给台下的你！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="中子物理学 | LemonTree的小站">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          中子物理学
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+
+  
+  <div style="padding-left: 8px;">
+    <span class="post-meta-divider" style="padding-right: 8px;">|</span>
+    <i class="fa fa-thumb-tack" style="color: #EB6D39"></i>
+    <font color=EB6D39>置顶</font>
+  </div>
+  
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-04-30 13:40:05" itemprop="dateCreated datePublished" datetime="2024-04-30T13:40:05+08:00">2024-04-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-06-12 13:11:23" itemprop="dateModified" datetime="2024-06-12T13:11:23+08:00">2024-06-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Physics/" itemprop="url" rel="index"><span itemprop="name">Physics</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>21k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>38 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="中子与原子核的作用">中子与原子核的作用</h1>
+<h2 id="中子分类">中子分类</h2>
+<p>反应堆核物理，实际上就是堆内中子的物理学。中子是组成原子核的粒子之一，其静止质量稍大于质子的静止质量。通常在工程上取中子的静止质量为1u,
+中子不带电荷。</p>
+<span id="more"></span>
+<p>在反应堆物理分析中，中子一般按照能量分成三类：</p>
+<ul>
+<li><strong>热中子</strong>：能量小于1eV</li>
+<li><strong>中能中子</strong>：能量在1eV <span
+class="math inline">\(\sim\)</span> 0.1MeV之间</li>
+<li><strong>快中子</strong>：能量大于0.1MeV</li>
+</ul>
+<h2 id="中子与原子核反应">中子与原子核反应</h2>
+<p>概况的讲，堆内中子与原子核的相互作用方式有：<strong>势散射</strong>、<strong>直接相互作用</strong>和<strong>复合核的形成</strong>。</p>
+<ul>
+<li><p><strong>势散射</strong>：
+本质为中子波与核表面势相互作用，中子既未进入靶核，靶核内能也未发生改变，势散射前后系统能动量守恒，属于弹性散射。</p></li>
+<li><p><strong>直接相互作用</strong>：直接相互作用是入射中子直接与靶核内某核子碰撞，使其从核里发射出来，而中子却留在了靶核内的核反应，这个过程需要高能中子才能直接与原子核发生相互作用。如果从靶核里发射出来的核子是质子，这就是直接相互作用的<span
+class="math inline">\((n,
+p)\)</span>反应。如果从核里发射出来的核子是中子，同时靶核由激发态返回基态放出<span
+class="math inline">\(\gamma\)</span>射线，就是直接的非弹性散射过程。实际反应堆中这样的高能中子数非常少，因此堆物理分析时这种直接相互作用方式是不重要的。</p></li>
+<li><p><strong>复合核的形成</strong>：复合核的形成分为两个阶段，首先中子被靶核<span
+class="math inline">\(_Z ^{A}X\)</span>吸收，形成激发态的复合核<span
+class="math inline">\([ _{Z}^{A+1}X^*]\)</span>,
+复合核可以在激发态停留一段时间，由于核内的无规律碰撞，激发能在核子间多次交换，使某个核子得到足以逸出系统的能量时，处于激发态的复合核放出一个粒子（或者一个光子）而衰变，并留下一个余核（或反冲核）。</p>
+<ul>
+<li><span class="math inline">\((n, p)\)</span>：<span
+class="math inline">\({}_Z^AX + {}_0^1n \to {}_{Z - 1}^AY +
+{}_1^1H\)</span>，复合核放出一个质子而衰变，称为<span
+class="math inline">\((n, p)\)</span>反应</li>
+<li><span class="math inline">\((n, \alpha)\)</span>：<span
+class="math inline">\({}_Z^AX + {}_0^1n \to {}_{Z - 2}^{A - 3}Y +
+{}_2^4He\)</span>，复合核放出一个<span
+class="math inline">\(\alpha\)</span>粒子而衰变，称为<span
+class="math inline">\((n, \alpha)\)</span>反应</li>
+<li><span class="math inline">\((n, n)\)</span>：<span
+class="math inline">\({}_Z^AX + {}_0^1n \to {}_Z^AX +
+{}_0^1n\)</span>，复合核放出一个中子，若余核<span
+class="math inline">\(_Z
+^{A}X\)</span>直接重新回到基态，则这个过程为<strong>共振弹性散射</strong>，称为<span
+class="math inline">\((n, n)\)</span>反应</li>
+<li><span class="math inline">\((n, n&#39;)\)</span>：<span
+class="math inline">\({}_Z^AX + {}_0^1n \to {}_Z^AX + {}_0^1n +
+\gamma\)</span>，复合核放出一个中子，若余核<span
+class="math inline">\(_Z ^{A}X\)</span>仍处于激发态，通过放出<span
+class="math inline">\(\gamma\)</span>射线回到基态，则这个过程为<strong>共振非弹性散射</strong>，称为<span
+class="math inline">\((n, n&#39;)\)</span>反应</li>
+<li><span class="math inline">\((n, \gamma)\)</span>：<span
+class="math inline">\({}_Z^AX + {}_0^1n \to {}_Z^{A + 1}X +
+\gamma\)</span>，复合核放出<span
+class="math inline">\(\gamma\)</span>射线而衰变，这个过程为<strong>辐射俘获</strong>称为<span
+class="math inline">\((n, \gamma)\)</span>反应</li>
+<li><span class="math inline">\((n, f)\)</span>：<span
+class="math inline">\({}_Z^AX + {}_0^1n \to {}_{ {Z_1} }^{ {A_1} }Y +
+{}_{ {Z_2} }^{ {A_2} }W + \nu
+{}_0^1n\)</span>，复合核通过分裂成两个较轻的核而衰变，这个过程为<strong>核裂变</strong>称为<span
+class="math inline">\((n, f)\)</span>反应</li>
+</ul></li>
+</ul>
+<p>综上所述，我们可以根据中子和靶核的作用结果的不同，将中子与原子核的作用分为两类：</p>
+<ul>
+<li><strong>散射</strong>：包括弹性散射（共振弹性散射和势散射）和非弹性散射（共振非弹性散射）</li>
+<li><strong>吸收</strong>：包括辐射俘获、核裂变、<span
+class="math inline">\((n, p)\)</span>和<span class="math inline">\((n,
+\alpha)\)</span>反应等</li>
+</ul>
+<h3 id="反应堆内的中子散射">反应堆内的中子散射</h3>
+<ol type="1">
+<li><strong>弹性散射</strong>：分为共振弹性散射和势散射，热中子反应堆中对中子从高能慢化到低能过程起主要作用的是弹性散射</li>
+<li><strong>非弹性散射</strong>：非弹性散射的发生要求入射中子的动能必须高于靶核的第一激发态能量，因此非弹性散射具有阈能的特点。</li>
+</ol>
+<p>对于轻核来说，他的激发态能量在MeV数量级，即使对于<span
+class="math inline">\(^{235}{\rm
+U}\)</span>这样的重核，中子也必须具有45keV以上的能量才能与之发生非弹性散射。在快中子反应堆中，非弹性散射过程才是重要的。对于热中子反应堆而言，裂变中子的能量在MeV的范围内，因此在高能中子区，仍然会有非弹性散射发生，但是一但中子的能量降到非弹性散射阈能以下后，便主要依靠弹性散射过程来慢化中子了</p>
+<h3 id="中子的吸收">中子的吸收</h3>
+<h4 id="辐射俘获">辐射俘获</h4>
+<p>辐射俘获<span class="math inline">\((n,
+\gamma)\)</span>可以在全能区内发生，对于低能中子而言，其与中等质量核和重核作用时易于发生这种反应。反应堆内重要的俘获反应为
+<span class="math display">\[
+{}_{92}^{238}{\rm U} + {}_0^1n \to {}_{92}^{239}{\rm U} + \gamma
+\]</span> <span class="math inline">\({}_{92}^{238}{\rm
+U}\)</span>吸收中子后变为<span class="math inline">\({}_{92}^{239}{\rm
+U}\)</span>, <span class="math inline">\({} _{92}^{239}{\rm
+U}\)</span>经过两次<span
+class="math inline">\(\beta^{-}\)</span>衰变后可转变为<span
+class="math inline">\({}^{239}{\rm Pu}\)</span>，<span
+class="math inline">\({}^{239}{\rm
+Pu}\)</span>是一种人工易裂变材料，在自然界里是不存在的，因此这一过程对于核燃料的转换与增值具有重要意义。</p>
+<p>辐射俘获中，原先稳定的原子核俘获一个中子后往往会转变为具有放射性的原子核，因此辐射俘获会产生放射性。</p>
+<h4 id="n-pn-alpha反应"><span class="math inline">\((n, p)、(n,
+\alpha)\)</span>反应</h4>
+<p>反应堆运行过程，堆内冷却剂和慢化剂经过<strong>高能中子</strong>照射后，会发生<span
+class="math inline">\((n, p)\)</span>核反应： <span
+class="math display">\[
+_8^{16}{\rm O} + _0^1{\rm n} \to _7^{16}{}{\rm N} + {}_1^1{\rm H}
+\]</span> <strong>热中子</strong>也会和<span
+class="math inline">\(^{10}{\rm B}\)</span>发生<span
+class="math inline">\((n, \alpha)\)</span>吸收反应： <span
+class="math display">\[
+_5^{10}{\rm B} + _0^1{\rm n} \to _3^7{\rm Li} + {}_2^4{\rm He}
+\]</span> 上面的反应经常用来探测堆内热中子，并且<span
+class="math inline">\(_5^{10}{\rm
+B}\)</span>也广泛用作热中子反应堆的反应性控制材料。</p>
+<h4 id="核裂变">核裂变</h4>
+<h5 id="易裂变同位素"><strong>易裂变同位素</strong>：</h5>
+<p>在各种能量中子作用下均可发生裂变，并且在<strong>低能中子</strong>作用下发生裂变法可能性较大的核素，称为易裂变同位素，常见的有：<span
+class="math inline">\({}^{233}{\rm U}\)</span>、<span
+class="math inline">\({}^{235}{\rm U}\)</span>、<span
+class="math inline">\({}^{239}{\rm Pu}\)</span>、<span
+class="math inline">\({}^{241}{\rm Pu}\)</span></p>
+<h5 id="可裂变同位素"><strong>可裂变同位素</strong>：</h5>
+<p>在能量高于某一阈值的中子作用下才能发生裂变的核素，称为可裂变同位素，常见的有：<span
+class="math inline">\({}^{232}{\rm Th}\)</span>、<span
+class="math inline">\({}^{238}{\rm U}\)</span>、<span
+class="math inline">\({}^{240}{\rm Pu}\)</span></p>
+<h1 id="中子截面与中子能谱">中子截面与中子能谱</h1>
+<h2 id="中子能谱">中子能谱</h2>
+<p>中子数关于能量的分布称为<strong>中子能谱分布</strong>，反应堆中总的中子通量密度为：
+<span class="math display">\[
+\Phi  = \int_0^\infty  {n\left( E \right)v\left( E \right)dE}  =
+\int_0^\infty  {\phi \left( E \right)dE}
+\]</span> 我们关注中子能谱分布，实际上关注的就是<span
+class="math inline">\(\phi \left( E \right)\)</span>的分布</p>
+<h2 id="中子截面">中子截面</h2>
+<p>核反应截面的数值取决于入射中子的能量和靶核的性质，对于多数元素，反应截面随入射中子能量<span
+class="math inline">\(E\)</span>的变化特性包含三个区域：</p>
+<ul>
+<li><strong>低能区</strong>：<span class="math inline">\(E \le
+1eV\)</span></li>
+<li><strong>共振区（中能区）</strong>：<span class="math inline">\(1eV
+&lt; E \le {10^5}eV\)</span>，特别是<span class="math inline">\(1 \sim
+{10^3}eV\)</span>区域，许多重核元素截面会出现许多共振峰。</li>
+<li><strong>快中子区</strong>：<span class="math inline">\(E &gt;
+{10^5}eV\)</span></li>
+</ul>
+<h3 id="微观吸收截面">微观吸收截面</h3>
+<p>低能区核素微观吸收截面 <span
+class="math inline">\(\sigma_{a}\)</span> 按照 <span
+class="math inline">\(1/\sqrt{E}\)</span> 规律变化，即 <span
+class="math inline">\(\sigma_{a}(E) \sqrt{E} = {\rm
+Const}\)</span>，一般可以通过如下式子计算中子的微观吸收截面</p>
+<p><span class="math display">\[
+{\sigma _a}\left( E \right) = {\sigma _a}\left( {0.0235} \right)\sqrt
+{\frac{ {0.0235} }{E} }
+\]</span></p>
+<p><span class="math inline">\(0.0253 {\rm eV}\)</span> 为温度为 <span
+class="math inline">\(297 {\rm K}\)</span>
+时的热中子能量，一般核工程手册中以此为换算基准能量。</p>
+<ul>
+<li><p>对于轻核来讲，由于其第一激发态能量较高，因此在中子能量在几个
+<span class="math inline">\({\rm keV}\)</span> 到 <span
+class="math inline">\({\rm MeV}\)</span> 区间内，其吸收截面都近似按照
+<span class="math inline">\(1/v\)</span>
+律变化，只有对能量比较高的中子(一般在 <span class="math inline">\({\rm
+MeV}\)</span> 范围内)才会出现共振吸收，且轻核的共振峰宽而低。</p></li>
+<li><p>对于重核和中等质量核，其在中能区共振吸收的影响，吸收截面会偏移
+<span class="math inline">\(1/v\)</span>
+律，高能区其共振峰开始重叠以致不能分辨。</p></li>
+</ul>
+<h3 id="微观散射截面">微观散射截面</h3>
+<h4 id="非弹性散射截面-sigma_in">非弹性散射截面 <span
+class="math inline">\(\sigma_{in}\)</span></h4>
+<p>非弹性散射截面有阈能的特点，质量数越大，阈能越低。中子能量小于阈能时，<span
+class="math inline">\(\sigma_{in} = 0\)</span></p>
+<h4 id="弹性散射截面-sigma_s">弹性散射截面 <span
+class="math inline">\(\sigma_{s}\)</span></h4>
+<p>多数元素与较低能量中子的散射都是弹性的，<span
+class="math inline">\(\sigma_{s}\)</span>
+基本为<strong>常数</strong>，一般为几 <span class="math inline">\({\rm
+b}\)</span> 。对于轻核、中等核，中子能量从低能区一直到 <span
+class="math inline">\({\rm MeV}\)</span> 范围内，<span
+class="math inline">\(\sigma_{s}\)</span> 近似为常数。</p>
+<p>对于重核来讲，其在共振能区还有共振弹性散射出现。</p>
+<h3 id="微观裂变截面-sigma_f">微观裂变截面 <span
+class="math inline">\(\sigma_{f}\)</span></h3>
+<p>对于易裂变核素的裂变截面</p>
+<ul>
+<li>热能区：裂变截面值很大，且随中子能量的减小儿增加</li>
+<li>共振区：裂变截面出现共振峰，共振能区延伸到几个 <span
+class="math inline">\({\rm keV}\)</span></li>
+<li>高能区：在 <span class="math inline">\({\rm keV}\)</span> 到 <span
+class="math inline">\({\rm MeV}\)</span>
+能量范围内，裂变截面随中子能量的增加而下降到几<span
+class="math inline">\({\rm b}\)</span></li>
+</ul>
+<p>根据上述对截面的分析，可以得到各截面之间的关系为</p>
+<p><span class="math display">\[
+\begin{array}{l}
+{\sigma _s} = {\sigma _e} + {\sigma _{in}}\\
+{\sigma _a} = {\sigma _\gamma } + {\sigma _f} + {\sigma _{n,\alpha }} +
+{\sigma _{n,p}} +  \cdots \\
+{\sigma _t} = {\sigma _s} + {\sigma _a}
+\end{array}
+\]</span></p>
+<h1 id="热中子反应堆内中子循环">热中子反应堆内中子循环</h1>
+<p>中子循环的五个过程为</p>
+<ol type="1">
+<li><p><span class="math inline">\(^{238} {\rm U}\)</span>
+的快中子增殖：设初始一代有n个中子，在初始裂变中子中，约有 <span
+class="math inline">\(60\%\)</span> 的中子能量在 <span
+class="math inline">\(^{238} {\rm U}\)</span> 裂变阈能(约 $ {}$
+)以上，这部分中子与 <span class="math inline">\(^{238} {\rm U}\)</span>
+作用时能够引起 <span class="math inline">\(^{238} {\rm U}\)</span>
+裂变而产生快中子，称为 <span class="math inline">\(^{238} {\rm
+U}\)</span> 的快中子增殖效应，定义快中子增殖因数 <span
+class="math inline">\(\varepsilon\)</span>
+为由初始裂变中子所得到的慢化到 <span class="math inline">\(^{238} {\rm
+U}\)</span> 裂变阈能以下的平均中子数，则快中子增殖使中子增长至 <span
+class="math inline">\(n \varepsilon\)</span> 个。</p></li>
+<li><p>慢化过程的共振吸收：由于共振区共振吸收的影响，只有一部分快中子能够慢化到热中子，记逃脱共振俘获概率为
+<span class="math inline">\(p\)</span>，则共振俘获后还剩 <span
+class="math inline">\(n p \varepsilon\)</span>
+个慢化到裂变阈能以下。</p></li>
+<li><p>慢化剂一级结构材料等物质的辐射俘获：热中子部分被燃料吸收，部分被其他物质所吸收，记热中子利用系数为
+<span class="math inline">\(f\)</span>
+表征被燃料吸收的热中子数与热中子总数的比值。</p></li>
+<li><p>燃料吸收热中子引起裂变：定义 <span
+class="math inline">\(\eta\)</span>
+为核燃料每吸收一个热中子所产生的平均裂变中子数，设每次裂变所产生的平均中子数为
+<span class="math inline">\(\nu\)</span>，则有</p></li>
+</ol>
+<p><span class="math display">\[
+\eta  = \frac{ { {\Sigma _f} } } { { {\Sigma _a} } }\nu
+\]</span></p>
+<ol start="5" type="1">
+<li>中子的泄露：包括慢化过程中的泄露和热中子扩散过程中的泄露，定义不泄露概率为<span
+class="math inline">\(\Lambda\)</span>，则有</li>
+</ol>
+<p><span class="math display">\[
+\Lambda  = {\Lambda _s} {\Lambda _d}
+\]</span></p>
+<p>最终得到下一代的中子总数为 <span class="math inline">\(n\varepsilon
+pf\eta {\Lambda _s}{\Lambda _d}\)</span>，根据有效增殖因数定义</p>
+<p><span class="math display">\[
+{k_{eff} } = \frac{ {n\varepsilon pf\eta {\Lambda _s}{\Lambda _d} } }
+{n} = {k_\infty }\Lambda
+\]</span></p>
+<p>其中 <span class="math inline">\({k_\infty } = \varepsilon
+pf\eta\)</span> 称为四因子公式</p>
+<h1 id="中子慢化理论">中子慢化理论</h1>
+<p>反应堆内裂变中子具有相当高的能量，其平均值约为2
+MeV。这些中子在系统中与原子核发生连续的弹性和非弹性碰撞，使其能量逐渐地降低到引起下一次裂变的平均能量。对于快中子反应堆这一平均能量一般在(0.1
+MeV)左右或更高，而对于热中子反应堆，绝大多数裂变中子被慢化到热能区。中子由于散射碰撞而降低速度的过程叫做慢化过程。</p>
+<h2 id="中子的弹性散射过程">中子的弹性散射过程</h2>
+<p><img src="Elastic-scattering.png" width="50%" height="50%" title="实验室坐标系和质心系弹性散射" alt="错误无法显示"/></p>
+<p>实验室坐标系L下中子与核子的碰撞是各项异性的，质心系C中是各向同性的。所以我们在C系中进行研究。</p>
+<p>设靶核静止，则在碰撞前质心系中中子和靶核的速度为：</p>
+<p><span class="math display">\[
+\begin{array}{l}
+v_c = v_1 - V_{CM} = \frac{A}{A+1} v_1 \\
+V_c = -V_{CM} = - \frac{1}{A+1} v_1
+\end{array}
+\]</span></p>
+<p>在质心系里看，碰撞前后中子和靶核的速度大小不变，只是运动的方向发生了变化。</p>
+<p><span class="math display">\[
+\begin{array}{l}
+v_c&#39; = v_1 - V_{CM} = -\frac{A}{A+1} v_1 \\
+V_c&#39; = -V_{CM} = \frac{1}{A+1} v_1
+\end{array}
+\]</span></p>
+<p><img src="L-C-angle.png" width="50%" height="50%" title="L系和C系散射角" alt="错误无法显示"/></p>
+<p>换回到实验室坐标系L下，得到碰后中子的速度为</p>
+<p><span class="math display">\[
+v_1&#39;^2 = V_{CM}^2 + v_c&#39;^2 + 2 v_c&#39; V_{CM} {\rm cos}
+\theta_c = \frac{v_1^2 (A^2 + 2A {\rm cos} \theta_c + 1) }{ (A+1)^2 }
+\]</span></p>
+<p>因此经过一次碰撞前后，中子的能量之比为</p>
+<p><span class="math display">\[
+\frac{E&#39;}{E} = \frac{v_1&#39;^2 }{v_1^2} = \frac{(A^2 + 2A {\rm cos}
+\theta_c + 1) }{ (A+1)^2 }
+\]</span></p>
+<p>引入参数 $ = ()^2$，碰后能量可以写为</p>
+<p><span class="math display">\[
+E&#39; = \frac{1}{2} [(1+\alpha) - (1-\alpha){\rm cos} \theta_c]E
+\]</span></p>
+<ul>
+<li><p><span class="math inline">\(\theta = 0^ {\circ}\)</span>时, <span
+class="math inline">\(E&#39; \rightarrow E&#39;_{\rm max} =
+E\)</span>，碰撞前后中子能量不变</p></li>
+<li><p><span class="math inline">\(\theta = 180^ {\circ}\)</span>时,
+<span class="math inline">\(E&#39; \rightarrow E&#39;_{\rm min} = \alpha
+E\)</span></p></li>
+</ul>
+<p>因此经过一次碰撞后中子所处的能量区间为 <span
+class="math inline">\([\alpha E,
+E]\)</span>，一次碰撞的最大能量损失为<span class="math inline">\(\Delta
+E_{\rm max} = (1 - \alpha) E\)</span>，为了慢化速度加快，则应使 <span
+class="math inline">\(A\)</span>
+尽量小，所以应该选择轻核元素作为慢化剂。</p>
+<p>根据散射角之间的关系，有</p>
+<p><span class="math display">\[
+v&#39;_1 {\rm cos} \theta_l = V_{CM} + v&#39;_c {\rm cos} \theta_c
+\]</span></p>
+<p>联立消去 <span class="math inline">\(\theta_c\)</span>
+可得实验室坐标下散射角余弦与碰撞前后能量的关系</p>
+<p><span class="math display">\[
+{\rm cos} \theta_l = \frac{1}{2} [(A+1) \sqrt{\frac{E&#39;}{E} } - (A-1)
+\sqrt{\frac{E}{E&#39;}}]
+\]</span></p>
+<h3 id="散射后中子的能量分布">散射后中子的能量分布</h3>
+<p>根据碰撞后中子散射角分布的概率可以求得碰撞后中子能量 <span
+class="math inline">\(E&#39;\)</span> 的分布，定义 <span
+class="math inline">\(f(E \rightarrow E&#39;)\)</span>
+为<strong>散射函数</strong>， <span class="math inline">\(f(E
+\rightarrow E&#39;) dE&#39;\)</span> 表示碰撞前中子能量为 <span
+class="math inline">\(E\)</span>，碰撞后中子能量在 <span
+class="math inline">\(E&#39;\)</span> 附近 <span
+class="math inline">\(dE&#39;\)</span> 的概率，当入射能量 <span
+class="math inline">\(E\)</span> 小于几 MeV
+时，质心系内中子的散射是各向同性的，因此</p>
+<p><span class="math display">\[
+f(\theta_c) d\theta_c = \frac{d \Omega_c}{4 \pi} = \frac{1}{2} {\rm
+sin}\theta_c d\theta_c
+\]</span></p>
+<p>进而可以得到散射函数为</p>
+<p><span class="math display">\[
+f(E \rightarrow E&#39;) dE&#39; = -\frac{d E&#39;}{(1 - \alpha) E} \quad
+\quad \alpha E \leq E&#39; \leq E
+\]</span></p>
+<p>这表明散射后的能量是均匀分布的，并且与碰撞后的能量 <span
+class="math inline">\(E&#39;\)</span> 大小无关。</p>
+<h3 id="平均对数能降">平均对数能降</h3>
+<p>由于中子能量分布范围广，反应堆物理中常用<strong>对数能降</strong>
+<span class="math inline">\(u\)</span>
+来描述能量变化，取裂变中子平局能量 <span class="math inline">\(E_0 = 2
+{\rm MeV}\)</span> 为参考能量，对数能降定义为</p>
+<p><span class="math display">\[
+u = \ln \frac{ { {E_0}} } { {E} }
+\]</span></p>
+<p>一次碰撞后对数能量的增量为</p>
+<p><span class="math display">\[
+\Delta u = u&#39; - u = \ln \frac{ { {E_0}} } { {E&#39;} } -  \ln \frac{
+{ {E_0}} } { {E} } =  \ln \frac{ { {E}} } { {E&#39;} }
+\]</span></p>
+<p>描述中子慢化过程时，通常采用<strong>平均对数能降</strong> <span
+class="math inline">\(\xi\)</span></p>
+<p><span class="math display">\[
+\xi = \overline {\ln E - \ln E&#39;}  = \int_E^{\alpha E} {\left( {\ln E
+- \ln E&#39;} \right)f\left( {E \to E&#39;} \right)dE&#39;}  =
+\int_E^{\alpha E} {\ln \frac{E}{ {E&#39;} }\frac{ {dE&#39;} }{ {\left(
+{1 - \alpha } \right)E}}}
+\]</span></p>
+<p>积分后得</p>
+<p><span class="math display">\[
+\xi  = 1 + \frac{\alpha }{ {1 - \alpha } }\ln \alpha  = 1 - \frac{ { {
+{\left( {A - 1} \right)}^2} } } { {2A} }\ln \left( {\frac{ {A + 1}} { {A
+- 1}} } \right)
+\]</span></p>
+<p><span class="math inline">\(A &gt; 10\)</span>
+时，平均对数能降可近似为</p>
+<p><span class="math display">\[
+\xi  \approx \frac{2}{ {A + \frac{2}{3}}}
+\]</span></p>
+<p>因此当质心系中的散射为各向同性时，平均对数能降 <span
+class="math inline">\(\xi\)</span> 只与靶核质量数 <span
+class="math inline">\(A\)</span> 有关，而与中子的能量无关。</p>
+<h3 id="平均散射角余弦">平均散射角余弦</h3>
+<p>在L实验室坐标系中，每次碰撞的平均散射角余弦值为</p>
+<p><span class="math display">\[
+\overline { {\mu _l}}  = \int_0^\pi  {\cos {\theta _l}f\left( { {\theta
+_l}} \right)d{\theta _l}}  = \frac{1}{2}\int_0^\pi  {\frac{ {A\cos
+{\theta _c} + 1}}{ {\sqrt { {A^2} + 2A\cos {\theta _c} + 1} }}} \sin
+{\theta _c}d{\theta _c} = \frac{2}{ {3A}}
+\]</span></p>
+<p>因此L系中散射各相异性，中子沿原来方向运动的概率较大；靶核质量愈小，散射各相异性概率愈大。
+<span class="math inline">\(A \rightarrow 0\)</span> 时，<span
+class="math inline">\({\mu _l \rightarrow 0}\)</span>,
+系统质心移动到靶核上，L系散射各向同性。</p>
+<h3 id="慢化剂选择">慢化剂选择</h3>
+<p>慢化剂的选择要考虑以下因素：</p>
+<ul>
+<li>大的宏观散射截面 <span class="math inline">\(\Sigma_s\)</span></li>
+<li>较大的对数能降 <span class="math inline">\(\xi\)</span></li>
+<li>较大的慢化比 <span class="math inline">\(\xi \Sigma_s /
+\Sigma_a\)</span></li>
+</ul>
+<p>反应堆常用的慢化剂有：</p>
+<ol type="1">
+<li>重水，慢化比最大，但是价格昂贵，可以直接用天然铀做核燃料；</li>
+<li>轻水，慢化能力大，慢化比小，但是价格低廉，需要用浓缩铀；</li>
+<li>石墨，慢化比较大，慢化能力小，需要有庞大的堆芯体积。</li>
+</ol>
+<h3 id="中子平均寿命">中子平均寿命</h3>
+<p>快中子自裂变产生到慢化成热中子，直至最后被俘获所需的平均时间，称为中的的<strong>平均寿命</strong>
+<span class="math inline">\(l\)</span></p>
+<p>对于热中子反应堆，中子平均寿命主要由扩散时间决定。对于压水堆，中子平均寿命
+<span class="math inline">\(l \approx 10^{-4} {\rm
+s}\)</span>，对于快中子反应堆，中子平均寿命 <span
+class="math inline">\(l \approx 10^{-7} {\rm s}\)</span>.</p>
+<p><span class="math display">\[
+l = t_s + t_d
+\]</span></p>
+<p>其中 <span class="math inline">\(t_s\)</span> 为慢化时间, <span
+class="math inline">\(t_d\)</span> 为扩散时间</p>
+<h4 id="慢化时间">慢化时间</h4>
+<p><span class="math inline">\(dt\)</span>
+时间间隔内中子与原子核发生弹性散射碰撞次数为 <span
+class="math inline">\(n = v dt / \lambda_s (E)\)</span>,
+产生的平均对数能降为</p>
+<p><span class="math display">\[
+du = -\frac{dE}{E} = \frac{\xi v} dt
+\]</span></p>
+<p>其中 <span class="math inline">\({\lambda_s (E)}\)</span> 是能量为
+<span class="math inline">\(E\)</span> 的中子的散射平均自由程,
+可以得到中子从 <span class="math inline">\(E_0\)</span> 慢化到 <span
+class="math inline">\(E_{th}\)</span> 所用的时间<span
+class="math inline">\(t_s\)</span>为</p>
+<p><span class="math display">\[
+t_s = - \int_{ {E_0}}^{ {E_{th}}} {\frac{ { {\lambda _s}\left( E
+\right)}}{ {\xi v}}} \frac{ {dE}}{E} \approx \sqrt 2 \frac{ { { {\bar
+\lambda }_s}}}{\xi }\left[ {\frac{1}{ {\sqrt { {E_{th}}} }} - \frac{1}{
+{\sqrt { {E_0}} }}} \right]
+\]</span></p>
+<h4 id="扩散时间">扩散时间</h4>
+<p>快中子慢化成热中子后，在被俘获前还会在介质中扩散一段时间 <span
+class="math inline">\(t_d\)</span>, 以 <span
+class="math inline">\(\lambda_a (E)\)</span>
+表示中子的吸收平均自由程，则热中子的平均寿命为</p>
+<p><span class="math display">\[
+{t_d}\left( E \right) = \frac{ { {\lambda _a}\left( E \right)}}{v} =
+\frac{1}{ { {\Sigma _a}\left( E \right)v}}
+\]</span></p>
+<p>对于吸收截面满足 <span class="math inline">\(1/v\)</span>
+律的介质，有 <span class="math inline">\({\Sigma _{a 0}}\left( E \right)
+v_0\)</span>，扩散时间可以写为</p>
+<p><span class="math display">\[
+t_d (E) = \frac{1}{ { {\Sigma _{a0}}\left( E \right)v_0}}
+\]</span></p>
+<p>其中 <span class="math inline">\({\Sigma _{a 0}}\)</span> 是 <span
+class="math inline">\(v_0 = 2200 {\rm m / s}\)</span>
+的热中子宏观吸收截面。</p>
+<h2 id="中子慢化能谱">中子慢化能谱</h2>
+<h3 id="中子慢化方程的建立">中子慢化方程的建立</h3>
+<p>在描述中子慢化过程时，通常采用<strong>慢化密度</strong> <span
+class="math inline">\(q({\bf r}, E)\)</span> 这个物理量，它表示在 <span
+class="math inline">\({\bf r}\)</span> 处单位体积内每秒慢化到能量 <span
+class="math inline">\(E\)</span> 以下的中子数。</p>
+<p>在 <span class="math inline">\({\bf r}\)</span> 处能量为 <span
+class="math inline">\(E&#39;\)</span> 的中子单位体积内每秒慢化到 <span
+class="math inline">\(E\)</span> 以下的中子数为</p>
+<p><span class="math display">\[
+\int_E^0 { {\Sigma _s}\left( { {\bf r},E&#39;} \right)f\left( {E&#39;
+\to E} \right)\phi \left( { {\bf r},E&#39;} \right)dE}
+\]</span></p>
+<p>根据定义慢化密度为 <span class="math inline">\(E &gt; E&#39;\)</span>
+的所有能量的中子慢化到 <span class="math inline">\(E\)</span>
+以下的数目总和，因此有</p>
+<p><span class="math display">\[
+q\left( { {\bf r},E} \right) = \int_E^\infty  {dE&#39;\int_E^0 { {\Sigma
+_s}\left( { {\bf r},E&#39;} \right)f\left( {E&#39; \to E} \right)\phi
+\left( { {\bf r},E&#39;} \right)dE} }
+\]</span></p>
+<p>在弹性散射的条件下，方程化简为</p>
+<p><span class="math display">\[
+\begin{array}{l}
+\begin{aligned}
+q\left( { {\bf r},E} \right) &amp; = \int_E^{E/\alpha }
+{dE&#39;\int_{\alpha E&#39;}^E {\frac{ { {\Sigma _s}\left( { {\bf
+r},E&#39;} \right)\phi \left( { {\bf r},E&#39;} \right)}} { {\left( {1 -
+\alpha } \right)E&#39;}}dE} } \\
+&amp; = \int_E^{E/\alpha } { {\Sigma _s}\left( { {\bf r},E&#39;}
+\right)\phi \left( { {\bf r},E&#39;} \right)\frac{ {E - \alpha E&#39;}}
+{ {\left( {1 - \alpha } \right)E&#39;}}dE&#39;}
+\end{aligned}
+\end{array}
+\]</span></p>
+<p>对于<strong>无限均匀介质</strong>，中子通量密度与空间坐标<span
+class="math inline">\({\bf r}\)</span> 无关，只能能量 <span
+class="math inline">\(E\)</span> 的函数。现考虑能量在 <span
+class="math inline">\(E \sim E + dE\)</span>
+能量间隔内的中子平衡：<br />
+进入 <span class="math inline">\(E \sim E + dE\)</span>
+的中子可以分为两部分：</p>
+<ol type="1">
+<li>由裂变中子源产生的直接处于该能量间隔内的中子 <span
+class="math inline">\(S(E) dE\)</span></li>
+<li>由于中子与介质原子核散射进入该能量间隔的中子，即由 <span
+class="math inline">\(E&#39; &gt; E\)</span> 的能区散射到 <span
+class="math inline">\(E \sim E + dE\)</span> 能区内的中子 <span
+class="math inline">\(dE\int_\infty ^E { {\Sigma _s}\left( {E&#39;}
+\right)f\left( {E&#39; \to E} \right)\phi \left( {E&#39;}
+\right)dE&#39;}\)</span></li>
+</ol>
+<p>离开该能区的中子数为从该能区散射出去和被吸收的中子数 <span
+class="math inline">\(\Sigma_t (E) \phi (E) dE\)</span>.</p>
+<p>根据中子平衡的稳态条件，进入该能区的中子数等于离开该能区的中子数，得到稳态无限介质内的中子慢化方程为</p>
+<p><span class="math display">\[
+{\Sigma _t}\left( E \right)\phi \left( E \right) = \int_\infty ^E {
+{\Sigma _s}\left( {E&#39;} \right)f\left( {E&#39; \to E} \right)\phi
+\left( {E&#39;} \right)dE&#39;}  + S\left( E \right)
+\]</span></p>
+<p>慢化方程的解即为所要求的中子慢化能谱。</p>
+<p>多数情况下，慢化方程式是无法求出解析解的，针对几种特定情况讨论一下慢化方程的解。</p>
+<h3 id="无吸收单核素无限介质">无吸收单核素无限介质</h3>
+<p>对于只含有一种核素的无吸收性介质,中子源 <span
+class="math inline">\(S(E_0)\)</span>
+为均匀分布，着重讨论慢化区，此能量区间不存在由裂变反应直接产生的裂变中子源，中子慢化方程写为</p>
+<p><span class="math display">\[
+{\Sigma _s}\left( E \right)\phi \left( E \right) = \int_E^{E/\alpha } {
+\frac{ {\Sigma _s}\left( {E&#39;} \right)\phi \left( {E&#39;} \right)} {
+{\left( {1 - \alpha } \right)E&#39;}}dE&#39;}
+\]</span></p>
+<p>它的渐进解形式为 <span class="math inline">\(\phi (E) = \frac{C}
+{E}\)</span>，代入慢化密度表达式得</p>
+<p><span class="math display">\[
+\begin{array}{l}
+\begin{aligned}
+q(E) &amp; = \frac{C}{1 - \alpha} \int_E^{E/\alpha } {\frac{\Sigma _s (E
+- \alpha E&#39;)} {E&#39;^2} dE&#39;} \\
+&amp; = C \Sigma_s (1 + \frac{\alpha}{1 - \alpha} \ln \alpha) \\
+&amp; = C \Sigma_s \xi
+\end{aligned}
+\end{array}
+\]</span></p>
+<p>得到中子慢化能谱为 <span class="math inline">\(\phi (E) = \frac{q(E)}
+{\xi \Sigma_s E}\)</span>，在无吸收稳态条件下慢化密度就是源强度, <span
+class="math inline">\(q(E) = S_0\)</span>, 最终得到中子能谱为</p>
+<p><span class="math display">\[
+\phi (E) = \frac{S_0} {\xi \Sigma_s E}
+\]</span></p>
+<p>这种形式的能谱称为 <span class="math inline">\(1/E\)</span>
+谱或费米谱。</p>
+<h3 id="无吸收混合物无限介质情况">无吸收混合物无限介质情况</h3>
+<p>对于混合物体系，其宏观散射截面 <span
+class="math inline">\(\Sigma_s(E) = \sum_{i} N_i \sigma_{si}\)</span>,
+对应漫化方程写为</p>
+<p><span class="math display">\[
+{\Sigma _t}\left( E \right)\phi \left( E \right) = \int_E ^{E_0}
+\frac{N_i \sigma_{si} \phi(E&#39;)} {(1 - \alpha_i) E&#39;} dE&#39;
+\]</span></p>
+<p>得到中子能谱的解为</p>
+<p><span class="math display">\[
+\phi (E) = \frac{1} {\sum_{i} {N_i \sigma_{si} \xi_i}} \frac{q(E)} {E}
+\]</span></p>
+<p>定义混合物的平均对数能降为 <span class="math inline">\(\bar \xi =
+\frac {\sum_{i} {N_i \sigma_{si} \xi_i}} {\sum_{i} {N_i
+\sigma_{si}}}\)</span>，得到中子慢化能谱为</p>
+<p><span class="math display">\[
+\phi (E) = \frac{q(E)} {\bar \xi \Sigma_s  E}
+\]</span></p>
+<h3 id="无限介质弱吸收情况">无限介质弱吸收情况</h3>
+<p>无限介质弱吸收情况，认为宏观吸收截面比宏观散射截面小很多，在 <span
+class="math inline">\(E - dE\)</span>
+的间隔中，慢化密度由于被中子被吸收减小了 <span
+class="math inline">\(dq\)</span>，它应该等于在 <span
+class="math inline">\(dE\)</span> 内被吸收的中子数，在目前所讨论的弱吸收
+<span class="math inline">\(\Sigma_a \ll \Sigma_s\)</span>
+情况下，近似地可以认为 <span class="math inline">\(\phi(E)\)</span>
+基本上和无吸收时情况相同，因此有</p>
+<p><span class="math display">\[
+dq = - \Sigma_a \phi(E) dE = - \Sigma_a \frac{q(E)} {\bar \xi \Sigma_s}
+\frac{dE}{E}
+\]</span></p>
+<p>将上式对 <span class="math inline">\(E\)</span> 到 <span
+class="math inline">\(E_0\)</span> 积分，同时注意到 <span
+class="math inline">\(q(E_0) = S_0\)</span>，因而有</p>
+<p><span class="math display">\[
+q(E) = S_0 \exp (- \int_E^{E_0} {\frac{\Sigma_a } {\bar \xi \Sigma_s}
+\frac{dE&#39;}{E&#39;}})
+\]</span></p>
+<p>根据逃脱共振俘获概率 <span class="math inline">\(p(E)\)</span>
+的定义，有</p>
+<p><span class="math display">\[
+p(E) = \frac{q(E)}{S_0} = \exp [- \int_E^{E_0} {\frac{\Sigma_a (E) }
+{\bar \xi \Sigma_s} \frac{dE&#39;}{E&#39;}}]
+\]</span></p>
+<h2 id="慢化过程的共振吸收">慢化过程的共振吸收</h2>
+<p>中子能量慢化到 <span class="math inline">\(0.1 {\rm MeV}\)</span>
+后，许多核素截面会在中能区产生共振峰，使得部分中子在慢化过程中被共振吸收，下面讨论具有强吸收共振峰的均匀介质情形。</p>
+<p><img src="Neutron-resonance-absorption.png" width="50%" height="50%" title="宽间距共振峰的共振吸收" alt="Error"/></p>
+<h3 id="有效共振积分">有效共振积分</h3>
+<p>由慢化剂和吸收剂组成的无限均匀介质，介质内存在均匀分布的中子源，源强为
+<span class="math inline">\(S_0\)</span>，放出能量为 <span
+class="math inline">\(E_0\)</span>
+的中子。共振峰间距足够大以至于前一个共振峰对后一个共振峰的影响可以忽略不计。近似认为到达共振峰
+<span class="math inline">\(i\)</span>
+的中子能谱为费米谱的形式，并对中子通量密度进行归一化，如认为源强 <span
+class="math inline">\(S_0 = \xi \Sigma_s\)</span></p>
+<p><span class="math display">\[
+\phi (E) = \frac{S_0}{\xi \Sigma_s E} \sim \frac{1}{E}
+\]</span></p>
+<p>此时共振峰的吸收反应率为 <span class="math display">\[
+R = N_A \int_{\Delta E_i} {\sigma_a (E) \phi (E) dE}
+\]</span> 其中 <span class="math inline">\(\phi (E)\)</span> 为共振峰
+<span class="math inline">\(i\)</span>
+内的中子通量密度分布，而在共振峰前的中子通量密度为 <span
+class="math inline">\(\phi (E) = 1/E\)</span>，定义共振峰 <span
+class="math inline">\(i\)</span> 的<strong>有效共振积分</strong></p>
+<p><span class="math display">\[
+I_i = \int_{\Delta E_i} {\sigma_a (E) \phi (E) dE}
+\]</span> 进而得到中子通过共振峰 <span class="math inline">\(i\)</span>
+的被吸收概率为 <span class="math inline">\(N_A I_i / \xi
+\Sigma_s\)</span>，进而可以计算逃脱共振俘获概率</p>
+<p><span class="math display">\[
+p_i = 1 - \frac{N_A I_i} {\xi \Sigma_s} \approx \exp[- \frac{N_A}{\xi
+\Sigma_s} I_i]
+\]</span></p>
+<p>裂变中子从初始能量 <span class="math inline">\(E_0\)</span>
+慢化至热中子能量 <span class="math inline">\(E_th\)</span>
+的过程中需要通过共振区的所有共振峰，因此热中子反应堆中逃脱共振俘获概率
+<span class="math inline">\(p\)</span> 为</p>
+<p><span class="math display">\[
+p = \prod\limits_i { {p_i}}  = \exp \left[ { - \frac{ { {N_A}}}{ {\xi
+{\Sigma _s}}}\sum\limits_i { I_i}} \right] = \exp \left[ { - \frac{ {
+{N_A}}}{ {\xi {\Sigma _s}}}I} \right]
+\]</span> 其中 <span class="math inline">\(I\)</span>
+为整个共振区的有效共振积分，表征共振峰对中子的吸收 <span
+class="math display">\[
+I = \sum\limits_i { I_i} = \int_{\Delta E} {\sigma_a (E) \phi (E) dE}
+\]</span></p>
+<h3 id="有效共振积分计算">有效共振积分计算</h3>
+<p>要求出有效共振积分首先要根据慢化方程求出共振峰内的中子通量密度 <span
+class="math inline">\(\phi (E)\)</span>，考虑无吸收慢化剂 <span
+class="math inline">\(M\)</span> 和吸收剂 <span
+class="math inline">\(A\)</span> 无限均匀介质，根据中子慢化方程</p>
+<p><span class="math display">\[
+\Sigma_t (E) \phi(E)  = \int_{E}^{E/ \alpha_M} {\frac {\Sigma_{s, M}
+\phi(E&#39;)}{(1 - \alpha_M) E&#39;} dE&#39;} + \int_{E}^{E/ \alpha_A}
+{\frac {\Sigma_{s, A} (E&#39;) \phi(E&#39;)}{(1 - \alpha_A) E&#39;}
+dE&#39;}
+\]</span> 其中 <span class="math inline">\(\Sigma_t (E) = \Sigma_{s, M}
++ \Sigma_{\gamma, A} (E) + \Sigma_{s, A} (E)\)</span>，由于吸收剂 <span
+class="math inline">\(A\)</span> 的散射截面 <span
+class="math inline">\(\Sigma_{s, A} (E)\)</span> 除了势散射截面 <span
+class="math inline">\(\sigma_{p, A}\)</span>
+外，还包括共振散射截面，因此它是能量的函数。</p>
+<h4 id="窄共振nr近似">窄共振(NR)近似</h4>
+<ul>
+<li><span class="math inline">\(\overline {\Delta {E_M}}  \gg {\Gamma
+_p}, \overline {\Delta {E_A}}  \gg {\Gamma _p}\)</span></li>
+</ul>
+<p>NR近似下中子通量密度为 <span class="math display">\[
+{\phi _{NR}}\left( E \right) = \frac{ { {\Sigma _{s,M}} + {\Sigma
+_{p,A}}}}{ { {\Sigma _t}\left( E \right)E}}
+\]</span></p>
+<p>有效共振积分 <span class="math display">\[
+{I_{NR,i}} = \int_{\Delta {E_i}} { {\sigma _{\gamma ,A}}\left( E
+\right)\frac{ { {\Sigma _{s,M}} + {\Sigma _{p,A}}}}{ { {\Sigma _t}\left(
+E \right)}}\frac{ {dE}}{E}}
+\]</span></p>
+<h4 id="窄共振无限质量nrim近似">窄共振无限质量(NRIM)近似</h4>
+<ul>
+<li><span class="math inline">\(\overline {\Delta {E_M}}  \gg {\Gamma
+_p}, \overline {\Delta {E_A}}  \ll {\Gamma _p}\)</span></li>
+</ul>
+<p>NRIM近似下中子通量密度为 <span class="math display">\[
+{\phi _{NRIM}}\left( E \right) = \frac{ { {\Sigma _{s,M}}}}{ {\left[ {
+{\Sigma _{s,M}} + {\Sigma _{\gamma ,A}}\left( E \right)} \right]E}}
+\]</span></p>
+<p>有效共振积分 <span class="math display">\[
+{I_{NRIM,i}} = \int_{\Delta {E_i}} { {\sigma _{\gamma ,A}}\left( E
+\right)\frac{ { {\Sigma _{s,M}}}}{ { {\Sigma _{s,M}} + {\Sigma _{\gamma
+,A}}\left( E \right)}}\frac{ {dE}}{E}}
+\]</span></p>
+<p>中子通量密度和有效共振积分通式为</p>
+<p><span class="math display">\[
+\begin{array}{l}
+\begin{aligned}
+{\phi _R}\left( E \right) = \frac{ { {\Sigma _{s,M}} + \lambda {\Sigma
+_{p,A}}}}{ {\left( { {\Sigma _{\gamma ,A}} + \lambda {\Sigma _{s,A}} +
+{\Sigma _{s,M}}} \right)E}}\\
+{I_i} = \int_{\Delta {E_i}} { {\sigma _{\gamma ,A}}\left( E
+\right)\frac{ { {\Sigma _{s,M}} + \lambda {\Sigma _{p,A}}}}{ { {\Sigma
+_{\gamma ,A}} + \lambda {\Sigma _{s,A}} + {\Sigma _{s,M}}}}\frac{
+{dE}}{E}}
+\end{aligned}
+\end{array}
+\]</span> 其中 <span class="math inline">\(\lambda=1\)</span>
+对应NR近似，<span class="math inline">\(\lambda=0\)</span>
+对应NRIM共振近似。</p>
+<h3 id="能量自屏效应">能量自屏效应</h3>
+<p><img src="Energy-self-shield.png" width="50%" height="50%" title="共振峰内中子通量密度畸变" alt="Error"/></p>
+<p>由于热中子在进入共振中心区域之前会被逐渐吸收，导致到达中心时的中子注量率明显低于燃料棒表面的中子注量率。在共振峰附近能量的中子尤其容易被自屏掉，因为共振截面通常很大。这种局部地方的中子注量率明显低于周围的现象，就被称为自屏效应。</p>
+<h2 id="热中子能谱">热中子能谱</h2>
+<p>热中子是指中子与所在的介质的原子或分子处于热平衡状态的中子。反应堆物理中通常把某个分解能量
+<span class="math inline">\(E_c\)</span> 以下的中子称为热中子， <span
+class="math inline">\(E_c\)</span>
+称为<strong>分界能</strong>或<strong>缝合能</strong>，对于压水堆通常取
+<span class="math inline">\(E_c = 0.625 {\rm eV}\)</span>.</p>
+<h3 id="热中子能谱的硬化">热中子能谱的“硬化”</h3>
+<ul>
+<li>在反应堆中，所有的热中子都是从高能慢化而来，然后与介质达到热平衡，因此较高能区的中子数就较多。</li>
+<li>由于介质也要吸收中子，因此必然有一部分中子尚未来得及和周围介质达到热平衡就被介质吸收了。因此低能量的地方，吸收概率要大一些，其结果又造成了能量较低部分的中子份额减少，高能中子的份额较大。</li>
+</ul>
+<p>热中子的平均能量和最概然能量都要比介质原子核的平均能量和最概然能量高，这一现象称为热中子能谱的<strong>硬化</strong></p>
+<p>硬化的结果相当于把介质的麦克斯韦分布谱向右移动，使 <span
+class="math inline">\(T_m\)</span> 增大到 <span
+class="math inline">\(T_n\)</span>。 <span
+class="math inline">\(T_n\)</span>
+称为中子温度，中子温度的数值一般要比介质温度高，这个差值与介质的慢化能力相关，近似有以下关系</p>
+<p><span class="math display">\[
+T_n = T_M (1 + C \frac{\Sigma_a (k T_M)}{\xi \Sigma_s})
+\]</span> 对于铀-水栅格，通常取 <span
+class="math inline">\(C=1.4\)</span>，如果栅元或介质内的各元素吸收截面服从
+<span class="math inline">\(1/v\)</span> 定律，则</p>
+<p><span class="math display">\[
+\Sigma_a (k T_M) = \Sigma_a (0.0253) \sqrt{\frac{293}{T_M}}
+\]</span></p>
+<p>通过分析，可以得到热中子反应堆内的能谱分布</p>
+<ul>
+<li>高能区（能量大于0.1
+MeV）,中子能谱近似地可以用裂变中子谱来描述。</li>
+<li>在慢化区，中子能量密度的能谱近似按照 <span
+class="math inline">\(1/E\)</span> 规律变化。</li>
+<li>在热能区，中子能谱可用麦克斯韦谱近似(<span
+class="math inline">\(T_M\)</span> 换成 <span
+class="math inline">\(T_n\)</span>)。</li>
+</ul>
+<h3 id="热中子的平均截面">热中子的平均截面</h3>
+<p>实际计算中通常把热能区的中子视为一群中子，因此需要求出平均截面</p>
+<p><span class="math display">\[
+\sigma  = \frac{ {\int_0^{E_c} {\sigma \left( E \right)N\left( E
+\right)vdE} }} { \int_0^{E_c} {N\left( E \right)vdE} }
+\]</span> 计算可以得到</p>
+<p><span class="math display">\[
+{ {\bar \sigma }_a} = \frac{ {\sqrt \pi  }}{2}\sqrt {\frac{ {0.0253}}{
+{k{T_n}}}} {\sigma _a}\left( {0.0253} \right)
+\]</span></p>
+<h1 id="中子扩散理论">中子扩散理论</h1>
+<p>由于中子与原子核间的无规则碰撞，中子在介质内的运动是一种杂乱无章的具有统计性质的运动，即初始在堆内某一位置具有某种能量及某一运动方向的中子，在稍晚些时候，将运动到堆内的另一位置以另一能量和另一运动方向出现。这一现象称为中子在介质内的<strong>输运</strong>过程。为了对中子输运过程进行研究，首先必须建立描述中子在介质输运过程或中子角密度分布
+<span class="math inline">\(n ({\bf r}, E, {\bf \Omega})\)</span>
+所满足的基本方程式，然描述中子输运过程的精确方程叫做玻尔兹曼输运方程。即使
+是稳态情况，中子输运方程也是一个含有空间位置 <span
+class="math inline">\((x, y, z)\)</span>，能量 <span
+class="math inline">\(E\)</span> 和运动方向 <span
+class="math inline">\((\theta, \varphi)\)</span>
+等6个自变量的偏微分-积分方程。</p>
+<p>如果中子通量密度的角分布是接近于各向同性的，例如在大型反应堆堆芯的中心部分，那么，可以近似地认为中子通量密度的角分布与运动方向
+<span class="math inline">\({\bf \Omega}\)</span>
+的依赖性很弱甚至无关，这使同题大大简化。通过这种近似简化得到的方程称为<strong>扩散方程</strong>。</p>
+<h2 id="单能中子扩散方程">单能中子扩散方程</h2>
+<p>在分子扩散现象中分子扩散是由于分子间的相互碰撞引起的，而在热中子反应堆内中子密度约为
+<strong><span class="math inline">\(10^{16} m^{-3}\)</span></strong>
+数量级，比起介质的原子核密度 (<strong><span
+class="math inline">\(10^{28} m^{-3}\)</span></strong> )
+要小得多。因此反应堆内中子之间的相互碰撞可以略去不计，其扩散主要是中子与介质原子核散射碰撞的结果。在中子密度大的地方，中子与原子核碰撞的次数就越多，而每次碰撞以后，中子通常要改变运动方向离开碰撞中心因此与分子的扩散相似，中子总是从中子密度高的地方向密度低的地方扩散。</p>
+<h3 id="fick定律">Fick定律</h3>
+<p>中子的扩散和气体分子的扩散很相似，它们都从浓度高的区域向浓度底的区域扩散，扩散的速率与粒子的密度的变化梯度成正比，既都服从“斐克扩散定律”。</p>
+<p><span class="math display">\[
+J = -D \nabla \phi
+\]</span></p>
+<p><strong>假设</strong></p>
+<ol type="1">
+<li>介质是无限的、均匀的：只有均匀，散射截面才是常数，才能提到积分号外面；只有无限，才能做无穷积分。</li>
+<li>在实验室坐标系中散射是各向同性的：落在单位立体角内的概率为 <span
+class="math inline">\(1/4 \pi\)</span></li>
+<li>介质的吸收截面很小即 <span class="math inline">\(\Sigma_a \ll
+\Sigma_s\)</span> ：只考虑散射截面，会使积分计算方便</li>
+<li>中子通量密度是随空间位置缓慢变化的函数：<span
+class="math inline">\(\phi(r)\)</span>
+才能写出表达式，做一阶泰勒展开</li>
+</ol>
+<p>具体推导过程参见 <a
+target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/699561762">中子扩散理论</a></p>
+<p>在这个假设下，我们得到了中子的流密度如下：</p>
+<ul>
+<li>每秒沿 <span class="math inline">\(z\)</span>
+轴负方向自上而下穿过单位面积的中子数：<br />
+<span class="math display">\[
+J_z^{-} = \frac{\phi_0}{4} + \frac{1}{6 \Sigma_s} (\frac{\partial
+\phi}{\partial z})
+\]</span></li>
+<li>每秒沿 <span class="math inline">\(z\)</span>
+轴负方向自下而上穿过单位面积的中子数：<br />
+<span class="math display">\[
+J_z^{+} = \frac{\phi_0}{4} - \frac{1}{6 \Sigma_s} (\frac{\partial
+\phi}{\partial z})
+\]</span></li>
+<li>单位时间内沿着 <span class="math inline">\(z\)</span>
+方向穿过单位面积的净中子数 <span class="math inline">\(J_z\)</span> 为
+<span class="math display">\[
+J_z = J_z^{+} - J_z^{-} = - \frac{\lambda_s}{3} \frac{\partial \phi
+({\bf r})}{\partial z}
+\]</span></li>
+</ul>
+<p><span class="math inline">\(J_x\)</span> 和 <span
+class="math inline">\(J_y\)</span> 同理可得</p>
+<p><span class="math display">\[
+J_x = - \frac{\lambda_s}{3} \frac{\partial \phi ({\bf r})}{\partial x}
+\]</span></p>
+<p><span class="math display">\[
+J_y = - \frac{\lambda_s}{3} \frac{\partial \phi ({\bf r})}{\partial y}
+\]</span></p>
+<p>最终得到中子流密度为 <span class="math display">\[
+{\bf J} = J_x \hat{i} + J_y \hat{j} + J_z \hat{k} = -
+\frac{\lambda_s}{3} \nabla \phi
+\]</span></p>
+<p>斐克定律表示：中子流密度J正比于负的中子通量密度梯度，
+其比例常数叫作扩散系数，并用 <span class="math inline">\(D\)</span>
+表示。推导过程中使用了在实验室坐标系中中子的散射是各向同性的假设，实际计算中应对散射的各向异性进行修正，必须用输运的平均自由程
+<span class="math inline">\(\lambda_{tr}\)</span> 代替散射平均自由程
+<span class="math inline">\(\lambda_s\)</span>，扩散系数 <span
+class="math inline">\(D\)</span> 可写为</p>
+<p><span class="math display">\[
+\begin{array}{l}
+\begin{aligned}
+&amp; D = \frac{\lambda_{tr}}{3} \\
+&amp; \lambda_{tr} = \frac{\lambda_s}{1 - \bar \mu_0} \\
+&amp; \mu_0 = \frac{2}{3A}
+\end{aligned}
+\end{array}
+\]</span></p>
+<h3 id="单能中子扩散方程建立">单能中子扩散方程建立</h3>
+<p>考虑一定体积V内的中子数守恒 <span class="math display">\[
+\frac{d}{dt} \int_{V} {n ({\bf r}, t) dV} = 产生率(S) - 泄露率(L) -
+吸收率(A)
+\]</span> 其中 <span class="math display">\[
+\begin{array}{l}
+\begin{aligned}
+&amp; L = \int_{S}{ {\bf J}({\bf r}, t) \cdot {\bf n} dS} = \int_{V}
+{\nabla \cdot {\bf J} dV} = -\int_{V} {D \nabla^2 \phi}({\bf r}, t)
+dV  \\
+&amp; S = \int_{V} {S(\bf r, t)} dV  \\
+&amp; A = \int_{V} {\Sigma_{a} \phi ({\bf r}, t)} dV
+\end{aligned}
+\end{array}
+\]</span></p>
+<p>得到<strong>单能中子的扩散方程</strong>为 <span
+class="math display">\[
+\frac{1}{v} \frac{\partial \phi ({\bf r}, t)}{partial t} = S ({\bf r},
+t) + D \nabla^2 \phi ({\bf r}, t) - \Sigma_a \phi ({\bf r}, t)
+\]</span></p>
+<p><strong>稳态</strong>情况下单能中子的扩散方程为 <span
+class="math display">\[
+S ({\bf r}, t) + D \nabla^2 \phi ({\bf r}, t) - \Sigma_a \phi ({\bf r},
+t) = 0
+\]</span></p>
+<h3 id="扩散方程边界条件">扩散方程边界条件</h3>
+<ol type="1">
+<li>在扩散方程适用的范围内，中子通量密度必须是正的、有限的实数</li>
+<li>在两种不同扩散性质的介质交界面上，垂直于分界面的中子流密度相等，中子通量密度相等</li>
+<li>介质与真空交界外表面上从真空返回介质的中子流等于零</li>
+</ol>
+<p>假设从交界面处将中子通量密度的分布曲线按它在交界面处的斜率向真空作直线外推，则<strong>在离开交界面距离
+<span class="math inline">\(d\)</span>
+处的位置上中子通量密度为零</strong>， 我们有 <span
+class="math inline">\(d = \frac{2}{3} \lambda_{th}\)</span>，<span
+class="math inline">\(d\)</span> 称为直线外推距离</p>
+<h3 id="fick定律适用范围">Fick定律适用范围</h3>
+<ol type="1">
+<li>在有限的介质内，在距离其表面几个自由程以外的全部区域斐克定律时成立的，而在距真空边界两三个自由程以内区域，它是不适用的。</li>
+<li>中子通量密度必须缓慢变化或它的梯度变化不大。
+在控制棒附近或两种扩散性质明显不同的介质交界面附近的几个平均自由程内，斐克定律不适用。此外，斐克定律只适用于弱吸收介质。</li>
+<li>推导中并没有考虑中子源的贡献，中子流密度的贡献只是来自中子与介质
+核的散射碰撞在距强中子源两三个平均自由程的区域内，斐克定律不适用。</li>
+</ol>
+<h2 id="非增殖介质内中子扩散方程的解">非增殖介质内中子扩散方程的解</h2>
+
+    </div>
+
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">
+              -------------本文结束  <i class="fa fa-paw"></i>  感谢您的阅读-------------
+        </div>
+    
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Lemon Tree
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/" title="中子物理学">https://echoxc.github.io/2024/04/30/Reactor-neutron-physics/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%8F%8D%E5%BA%94%E5%A0%86%E7%89%A9%E7%90%86/" rel="tag"># 反应堆物理</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/04/29/hello-world/" rel="prev" title="Hello World! 一个建于21世纪的小站，存活于互联网边缘~">
+                  <i class="fa fa-angle-left"></i> Hello World! 一个建于21世纪的小站，存活于互联网边缘~
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/04/30/Piano/" rel="next" title="练琴日常">
+                  练琴日常 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81OTgwNS8zNjI2Nw=="></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Lemon Tree</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">73k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:12</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("04/29/2024 10:00:00"); //此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒.";
+    }
+setInterval("createtime()",250);
+</script>
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/echoxc" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script size="100" alpha="0.4" zIndex="-1" src="https://cdnjs.cloudflare.com/ajax/libs/ribbon.js/1.0.2/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.umd.js" integrity="sha256-+2+qOqR8CKoHh/AsVR9k2qaDBKWjYNC2nozhYmv5j9k=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="/js/third-party/comments/livere.js"></script>
+
+</body>
+</html>
